@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12</title>
+    <link rel="stylesheet" href="style.Css">
+</head>
+<body>
+   <header id="Rosa"></header>
+
+   <main id="Meio">
+      <h2 class="Sub"></h2>
+      <p class="Par"></p>
+      <h2 class="Sub"></h2>
+      <pII class="Par"></pII>
+   </main>
+
+    <script>
+//PRIMEIRO PASSO - HEADER
+       const Cabeça = document.querySelector("#Rosa");
+
+       const h1 = document.createElement("h1");
+          h1.innerHTML = "A penúltima aula do curso";
+
+        Cabeça.appendChild(h1);
+//SEGUNDO PASSO - MAIN
+       const Meio = document.querySelector("#Meio");
+
+       const div = document.createElement("div");
+       const h2 = document.querySelector(".Sub"); 
+       const p = document.querySelector(".Par");
+          h2.innerHTML = "A Flor";
+          p.innerHTML = "Era uma vez uma pequena flor, que não crescia e não morria...";
+
+        Meio.appendChild(h2);
+        Meio.appendChild(p);
+
+       const divII = document.createElement("div");
+       const hII = document.querySelector(".Sub"); 
+       const pII = document.querySelector(".Par");
+          hII.innerHTML ="Jazz";
+          pII.innerHTML = "Jazz foi um incrível saxophone bem afinado, seu som era encantador que levava suas notas para lua ☾";
+
+        Meio.appendChild(hII);
+        Meio.appendChild(pII);
+  
+    </script>
+    
+</body>
+</html>
